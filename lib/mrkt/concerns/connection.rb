@@ -7,7 +7,7 @@ module Mrkt
     end
 
     def init_connection
-      Faraday.new(url: "https://#{@host}") do |conn|
+      Faraday.new("https://#{@host}") do |conn|
         conn.request :multipart
         conn.request :url_encoded
 
