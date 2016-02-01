@@ -64,7 +64,7 @@ describe Mrkt::CrudLeads do
         ]
       }
     end
-    subject { client.createupdate_leads(leads, lookup_field: :email) }
+    subject { client.createupdate_leads(leads, :createOrUpdate, :email) }
 
     before do
       stub_request(:post, "https://#{host}/rest/v1/leads.json")

@@ -30,7 +30,7 @@ module Mrkt
       @options = options
     end
 
-    %i(get post delete).each do |http_method|
+    [:get, :post, :delete].each do |http_method|
       define_method(http_method) do |path, payload = {}, &block|
         authenticate!
 

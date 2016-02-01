@@ -1,6 +1,6 @@
 module Mrkt
   module CrudLists
-    def get_leads_by_list(list_id, fields: nil, batch_size: nil, next_page_token: nil)
+    def get_leads_by_list(list_id, fields= nil, batch_size= nil, next_page_token= nil)
       params = {}
       params[:fields] = fields if fields
       params[:batchSize] = batch_size if batch_size

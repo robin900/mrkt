@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = %w(lib)
 
-  spec.required_ruby_version = '~> 2.0'
+  spec.required_ruby_version = '~> 1.9.3'
 
   spec.add_dependency 'faraday_middleware', '~> 0.9.1'
 
@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.2'
   spec.add_development_dependency 'webmock', '~> 1.21.0'
   spec.add_development_dependency 'simplecov', '~> 0.10.0'
-  spec.add_development_dependency 'pry-byebug', '~> 3.1.0'
+  spec.add_development_dependency 'debugger', '~> 1.6.8'
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.4.7'
   spec.add_development_dependency 'rubocop', '~> 0.32.1'
 end
